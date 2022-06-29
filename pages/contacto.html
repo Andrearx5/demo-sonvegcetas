@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;1,400&family=Tiro+Telugu:ital@1&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <header class="puntos">
+         <!--Logo + Menu nav-->
+        <a class="logocabecera" href="../index.html"><img src="../Imagenes/Logo.png" alt="Logo" height="80" width="80"></a>
+        <nav>       
+            <ul>
+                <li class="links"><a href="../index.html">INICIO</a></li>
+                <li class="links"><a href="./vegetarianas.html">VEGETARIANAS</a></li>
+                <li class="links"><a href="./veganas.html">VEGANAS</a></li>
+                <li class="links"><a href="./postres.html">POSTRES</a></li>
+                <li class="links"><a href="./contacto.html">CONTACTO</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main>
+        <section class="parrafo">
+            <h1>Si quieres formar parte de nuestro recetario...</h1>
+            <h3>Este es el lugar! completa tus datos acá.</h3>
+            <!-- formulario de contacto -->
+            <div>
+                <h2> Formulario: </h2>
+                <form action=""></form>
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" placeholder="Nombre..." />
+                <br/>
+                <label for="b">Apellido:</label>
+                <input type="text" id="b" placeholder="Apellido..." />
+                <br/>
+                <label for="correo">Email:</label>
+                <input type="email" id="correo" placeholder="Email..." />
+                <br/>
+                <label for="receta">Ingrese su receta:</label>
+                <textarea name="Receta" id="receta" cols="30" rows="7" placeholder="Escriba Acá..."></textarea>
+                <br/>
+                <label for="tipe">Tipo de receta</label>
+                <select name="tipe" id="tipe">
+                <option value="">Vegetariana</option>
+                <option value="">Vegana</option>
+                <option value="">Postres</option>
+                </select>
+                <br/>
+                <input type="checkbox" name="" id="check" />
+                <label for="check">Suscribirte al canal</label>
+                <br/>
+                <button type="submit">Enviar</button>
+                <button type="reset">Limpiar</button>
+            </div>
+            
+        </section>
+
+    </main>
+
+    <footer>
+        <!-- inicio de footer --> 
+        <div>
+            <img src="../Imagenes/Logo.png" alt="logo" width="120" height="120">
+    
+        </div>
+        <div class="textof">
+            <h2>Newsletter</h2>
+            <p>Suscribete y recibe todas nuestras novedades en tu correo</p>
+            <input type="email" placeholder="Ingresa tu email">
+            <input type="text" placeholder="Nombre">
+            <button type="submit">Enviar</button>
+    
+        </div>
+    
+    </footer>
+
+</body>
+
+</html>
