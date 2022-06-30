@@ -71,7 +71,7 @@ header {
 .puntos ul li {
 
    margin-right: 3%;
-   transition: 0.5s;
+   transition: 0.6s;
 }
 
 .puntos ul li:hover{
@@ -113,6 +113,11 @@ h1 {
     font-weight: bolder;
     text-align: center;
     padding-top: 2%;
+}
+
+h3 {
+    color: #705303;
+    border-bottom: #ebc65e;
 }
 
 /*Imagenes*/
@@ -168,9 +173,6 @@ footer {
 
  }
 
- button:hover {
-    transform: scale(2 2);
- }
 
 
  /*Aplicacion responsive - MOBILE LAST*/
