@@ -29,7 +29,7 @@ body {
 
 header {
 
-    background-color: rgb(80, 79, 78);
+    background-image: linear-gradient(50deg, rgb(80, 79, 78), grey);
     display: flex;
     justify-content: space-between;
     height: 8rem;
@@ -71,7 +71,13 @@ header {
 .puntos ul li {
 
    margin-right: 3%;
+   transition: 0.5s;
 }
+
+.puntos ul li:hover{
+    transform: translateY(-7px);
+}
+
 
 
 .puntos ul li a {
@@ -158,8 +164,8 @@ footer {
     padding-left: 3%;
     font-style: oblique;
     font-family: 'Times New Roman', Times, serif;
-    background-color: #ffba00;
-    
+    background-image: linear-gradient(50deg, #ffba00, #ebc65e);
+
  }
 
  button:hover {
