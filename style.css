@@ -24,37 +24,41 @@ body {
     padding: 1%;
  }
 
-/*Cabecera*/
+/*Cabecera por ahora reemplazado por menu nav de bootstrap*/
+
 
 header {
 
+
     background-image: url(./Imagenes/headerpic.jpeg);
     background-size: cover;
-    display: flex;
+    /*display: flex;
     justify-content: space-between;
     height: 8rem;
-    position: sticky;
-    top: 0%;
+    position: static;
+    top: 0%;*/
 
 }
 
-.logocabecera {
+/*.logocabecera {
 
     display: flex;
     align-items: center;
     padding-left: 4%;
-}
+}*/
 
-.puntos {
+
+/*.puntos {
 
     display: flex;
     justify-content: space-between;
-    flex-direction: initial;
+    flex-direction: row;
     align-items: center;
+ 
     
 
+}*/
 
-}
 
 .puntos ul {
 
@@ -82,7 +86,7 @@ header {
 
 .puntos ul li a {
 
-    color: #6c5104;
+    color: #fdc011;
     border-bottom: solid 1px;
     font-style: oblique;
     font-weight: bolder;
@@ -92,12 +96,13 @@ header {
 
 
 
+
 /*Fin de cabecera*/
 /*Incio de Main*/
 
 .display-6 {
 
-    color: #705303;
+    color: #9d7c22;
     font-family: 'Tiro Telugu', serif;
     font-size: 25px;
     font-weight: bolder;
@@ -107,7 +112,7 @@ header {
 }
 
 h1 {
-    color: white;
+    color: rgb(11, 50, 17);
     font-family: 'Tiro Telugu', serif;
     font-size: 25px;
     font-weight: bolder;
@@ -116,8 +121,10 @@ h1 {
 }
 
 h3 {
-    color: #705303;
+    color: #3d3b3b;
     border-bottom: #ebc65e;
+    font-size: 19px;
+    font-weight: bold;
 }
 
 /*Imagenes*/
@@ -125,7 +132,7 @@ h3 {
 .grid {
     display: grid;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
 
 
 }
@@ -136,6 +143,7 @@ h3 {
     padding: 15px;
     box-shadow: 0 25px 20px -12px rgba(238, 242, 133, 0.5);
     border-radius: 25px;
+
 
 
 }
@@ -238,7 +246,7 @@ footer {
         padding: 1%, 1%;
     }
 
-    .tituloh4{
+    .display-6{
         font-size: 19px;
     }
 
