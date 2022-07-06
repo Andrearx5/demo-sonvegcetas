@@ -27,38 +27,12 @@ body {
 /*Cabecera por ahora reemplazado por menu nav de bootstrap*/
 
 
-header {
 
-
+.navv{
     background-image: url(./Imagenes/headerpic.jpeg);
     background-size: cover;
-    /*display: flex;
-    justify-content: space-between;
-    height: 8rem;
-    position: static;
-    top: 0%;*/
 
 }
-
-/*.logocabecera {
-
-    display: flex;
-    align-items: center;
-    padding-left: 4%;
-}*/
-
-
-/*.puntos {
-
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    align-items: center;
- 
-    
-
-}*/
-
 
 .puntos ul {
 
@@ -86,14 +60,13 @@ header {
 
 .puntos ul li a {
 
-    color: #fdc011;
+    color: #513c03;
     border-bottom: solid 1px;
     font-style: oblique;
     font-weight: bolder;
 
 
 }
-
 
 
 
@@ -121,7 +94,7 @@ h1 {
 }
 
 h3 {
-    color: #3d3b3b;
+    color: #513c03;
     border-bottom: #ebc65e;
     font-size: 19px;
     font-weight: bold;
