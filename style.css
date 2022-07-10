@@ -142,8 +142,6 @@ p strong{
     box-shadow: 0 25px 20px -12px rgba(238, 242, 133, 0.5);
     border-radius: 25px;
 
-
-
 }
 
   .grid__cards img {
@@ -356,9 +354,6 @@ button{
 /*Medida de tablet*/
  @media (max-width:768px){
 
-    main{
-        max-width: 100%;
-    }
 
     .logocabecera{
         height: 40;
