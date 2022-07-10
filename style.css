@@ -155,7 +155,7 @@ p strong{
 
   .carruselcontainer{
 
-    max-width: 100%;
+    max-width: 40%;
     margin: 0 auto
 }
 
@@ -229,16 +229,6 @@ p strong{
 
     padding-left: 5%;
  }
-
-/*Formulario*/
-
-/*.formularios{
-    background-image: url(./Imagenes/escribir.jpg);
-    background-size: cover;
-    border-radius: 10px;
-    max-width: 40%;
-}*/
-
 
 
 /*pie de pagina*/
