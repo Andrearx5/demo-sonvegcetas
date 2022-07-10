@@ -146,7 +146,7 @@ p strong{
 
   .grid__cards img {
 
-
+    max-width: 100%;
     margin-bottom: 20px;
     margin-top: 20px;
 
@@ -246,7 +246,7 @@ footer {
 
 button{
     border-radius: 5px;
-    width: 15%;
+
  }
 
 
@@ -301,8 +301,9 @@ button{
     }
 
 }
+
 /*Pantalla media*/
- @media (max-width:375px){
+ @media (max-width:425px){
 
 
     .logocabecera{
@@ -340,9 +341,9 @@ button{
 
     .grid__cards img{
 
-        justify-items: center;
-        max-width: max-content;
+        justify-items: center;;
     }
+
 
     .recetas__grid{
         grid-template-columns: 1fr;
