@@ -308,8 +308,8 @@ button{
 
 
     .logocabecera{
-        height: 40;
-        width: 40;
+        height: 40%;
+        width: 40%;
         padding: 1%, 1%;
     }
 
@@ -356,7 +356,7 @@ button{
 /*Medida de tablet*/
  @media (max-width:768px){
 
-    body{
+    main{
         max-width: 100%;
     }
 
