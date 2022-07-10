@@ -149,19 +149,20 @@ p strong{
 
 .grid__cards img {
 
+
     margin-bottom: 20px;
     margin-top: 20px;
-    max-width: 100%;
+
 
 }
 
-.carruselcontainer{
+  .carruselcontainer{
 
     max-width: 0%;
     margin: auto
 }
 
-.card {
+  .card {
     background-color: #f3eddc;
     padding: 10px;
     box-shadow: 0 20px 20px -12px rgba(238, 242, 133, 0.5);
@@ -356,9 +357,6 @@ footer {
  @media (max-width:768px){
 
 
-    .links{
-        font-size: 16px;
-    }
     .logocabecera{
         height: 40;
         width: 40;
