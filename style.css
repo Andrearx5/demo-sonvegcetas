@@ -16,7 +16,6 @@ body {
     grid-template-rows: repeat(3, 0.5fr 2fr 0.5fr);
     width: 100%;
     height: 600px;
-    zoom: 0%;
     
 
  }
@@ -114,7 +113,7 @@ p strong{
     padding: auto
 }
 
-.fondo1{
+  .fondo1{
     background-color: #cab16e;
     color: #fff;
     max-width: max-content;
@@ -128,7 +127,7 @@ p strong{
 
 /*Imagenes*/
 
-.grid {
+  .grid {
     display: grid;
     align-items: center;
     justify-content: center;
@@ -136,7 +135,7 @@ p strong{
 
 }
 
-.grid__cards {
+  .grid__cards {
     
     background-color: rgb(241, 240, 232);
     padding: 15px;
@@ -147,7 +146,7 @@ p strong{
 
 }
 
-.grid__cards img {
+  .grid__cards img {
 
 
     margin-bottom: 20px;
@@ -158,7 +157,7 @@ p strong{
 
   .carruselcontainer{
 
-    max-width: 0%;
+    max-width: 100%;
     margin: auto
 }
 
@@ -223,12 +222,12 @@ p strong{
 /*Fin de Imagenes*/
 /*textos*/
 
-.parrafo {
+  .parrafo {
     padding: 2%;
 
  }
 
-.textof {
+  .textof {
 
     padding-left: 5%;
  }
@@ -247,7 +246,7 @@ footer {
 
  }
 
- button{
+button{
     border-radius: 5px;
     width: 15%;
  }
@@ -296,6 +295,7 @@ footer {
     .grid__cards img{
 
         justify-items: center;
+
     }
 
     .recetas__grid{
