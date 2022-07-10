@@ -158,7 +158,7 @@ p strong{
   .carruselcontainer{
 
     max-width: 100%;
-    margin: auto
+    margin: 0 auto
 }
 
   .card {
@@ -177,7 +177,7 @@ p strong{
   }
   
   .card__header img {
-    width: 100%;
+    max-width: 100%;
     border-radius: 10px;
     margin-bottom: 12px;
   }
@@ -356,6 +356,9 @@ button{
 /*Medida de tablet*/
  @media (max-width:768px){
 
+    body{
+        max-width: 100%;
+    }
 
     .logocabecera{
         height: 40;
