@@ -24,7 +24,7 @@ body {
     padding: 1%;
  }
 
-/*Cabecera por ahora reemplazado por menu nav de bootstrap*/
+/*Cabecera*/
 
 
 
@@ -258,8 +258,8 @@ footer {
 
 
     .logocabecera{
-        height: 40;
-        width: 40;
+        height: 40%;
+        width: 40%;
         padding: 1%, 1%;
     }
 
