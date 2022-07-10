@@ -79,7 +79,7 @@ body {
 
     color: #9d7c22;
     font-family: 'Lato', sans-serif;
-    font-size: 28px;
+    font-size: 25px;
     font-weight: bold;
     text-align: center;
     padding-top: 2%;
@@ -99,7 +99,7 @@ h1 {
 h3 {
     color: #513c03;
     border-bottom: #ebc65e;
-    font-size: 23px;
+    font-size: 20px;
     font-weight: bold;
 }
 
@@ -109,7 +109,7 @@ h4{
 
 
 p strong{
-    font-size: 20px;
+    font-size: 21px;
     padding: auto
 }
 
@@ -229,6 +229,17 @@ p strong{
 
     padding-left: 5%;
  }
+
+/*Formulario*/
+
+/*.formularios{
+    background-image: url(./Imagenes/escribir.jpg);
+    background-size: cover;
+    border-radius: 10px;
+    max-width: 40%;
+}*/
+
+
 
 /*pie de pagina*/
 
