@@ -341,6 +341,7 @@ button{
     .grid__cards img{
 
         justify-items: center;
+        max-width: max-content;
     }
 
     .recetas__grid{
