@@ -1,0 +1,48 @@
+
+
+ header{
+    background-image: url(../Imagenes/headerpic.jpeg);
+    background-size: cover;
+    
+    &__puntos{
+        height: 40%;
+        width: 40%;
+        padding: 5%, 5%;
+    }
+
+
+}
+
+ .puntos ul {
+
+    display: flex;
+    list-style: none;
+    width: 100%;
+    box-sizing: border-box;
+    text-decoration: none;
+    justify-content: end;
+    margin-top: 5%;
+
+    
+    li {
+
+        margin-right: 3%;
+        transition: 0.6s;
+
+
+    a {
+        color: #513c03;
+        border-bottom: solid 1px;
+        font-style: oblique;
+        font-weight: bolder;
+
+    }
+    
+    &:hover{
+        transform: translateY(-7px);
+    }
+
+    }  
+}
+
+
