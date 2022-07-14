@@ -4,6 +4,7 @@
     .grid{
         grid-template-columns: 1fr;
     }
+    
     &__cards{
         justify-items: center;
 
@@ -13,7 +14,7 @@
         justify-items: center;;
     }
 
-    .recetas__grid{
+    .recetas__grid {
         grid-template-columns: 1fr;
     }
 
@@ -48,7 +49,7 @@
 
     .grid{
         grid-template-columns: 1fr;
-    }
+    
 
     &__cards{
         justify-items: center;
@@ -58,7 +59,7 @@
 
         justify-items: center;;
     }
-
+}
 
     .recetas__grid{
         grid-template-columns: 1fr;
