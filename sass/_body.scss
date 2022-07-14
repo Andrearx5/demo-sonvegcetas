@@ -38,6 +38,7 @@ body {
     
     
     }
+
 }    
     
 
@@ -83,13 +84,15 @@ body {
         border-radius: 10px;
         padding: 5px;
         text-align: center;
-        font-weight: bold;
+        font-weight: $fontstyle;
+    }
+    
     
         &__Card:hover {
             transform: translateY(-5px);
 
         }
-    }
+    
   }
   
   .recetas {
@@ -110,6 +113,26 @@ body {
       }
 
   }
+
+  @media (max-width:320px) {
+    .grid{
+        grid-template-columns: 1fr;
+    }
+    
+    &__cards{
+        justify-items: center;
+
+    }
+    &__img{
+
+        justify-items: center;;
+    }
+
+    .recetas__grid {
+        grid-template-columns: 1fr;
+    }
+
+}
 
 
 

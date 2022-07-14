@@ -1,4 +1,4 @@
-* {
+/** {
     padding: 0%;
     margin: 0%;
     box-sizing: border-box;
@@ -7,7 +7,7 @@
 
 }
 /*body*/
-
+/*
 body {
     font-family: 'Lato', sans-serif;
     line-height: 2;
@@ -27,7 +27,7 @@ body {
 /*Cabecera*/
 
 
-
+/*
 .navv{
     background-image: url(./Imagenes/headerpic.jpeg);
     background-size: cover;
@@ -74,7 +74,7 @@ body {
 /*Incio de Main*/
 
 /*letras estilos*/
-
+/*
 .display-6 {
 
     color: #9d7c22;
@@ -126,7 +126,7 @@ p strong{
 }
 
 /*Imagenes*/
-
+/*
   .grid {
     display: grid;
     align-items: center;
@@ -219,7 +219,7 @@ p strong{
 
 /*Fin de Imagenes*/
 /*textos*/
-
+/*
   .parrafo {
     padding: 2%;
 
@@ -232,7 +232,7 @@ p strong{
 
 
 /*pie de pagina*/
-
+/*
 footer {
     display: flex;
     justify-content: flex-start;
@@ -254,7 +254,7 @@ button{
 
  /*Aplicacion responsive - MOBILE LAST*/
  /*Pantalla chica*/
-
+/*
  @media (max-width:320px){
 
 
@@ -304,6 +304,7 @@ button{
 }
 
 /*Pantalla media*/
+/*
  @media (max-width:425px){
 
 
@@ -355,6 +356,7 @@ button{
     
 
 /*Medida de tablet*/
+/*
  @media (max-width:768px){
 
 
@@ -392,6 +394,6 @@ button{
 
 
 
-}
+}*/
 
 
