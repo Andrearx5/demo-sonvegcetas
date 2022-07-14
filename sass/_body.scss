@@ -14,6 +14,8 @@ body {
     padding: 1%;
  }
 
+ /*Imagenes*/
+
  .grid {
     display: grid;
     align-items: center;
@@ -36,9 +38,9 @@ body {
     
     
     }
+}    
+    
 
-
-}
 
 .carruselcontainer{
 
@@ -108,5 +110,28 @@ body {
       }
 
   }
+
+  @media (max-width:320px){
+
+    .grid{
+        grid-template-columns: 1fr;
+    }
+
+    .&__cards{
+        justify-items: center;
+
+    }
+
+    .&__img{
+
+        justify-items: center;;
+    }
+
+
+    .recetas__grid{
+        grid-template-columns: 1fr;
+    }
+
+}
 
   
