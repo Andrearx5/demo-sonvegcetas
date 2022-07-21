@@ -10,9 +10,30 @@ footer {
     font-style: oblique;
     font-family: 'Times New Roman', Times, serif;
     background-image: linear-gradient(50deg, #ffba00, #ebc65e);
+
+
 }
 
 button{
     border-radius: 5px;
 
  }
+
+ .icons{
+    display: inline-block;
+    align-items: flex-end;
+ }
+
+ @each $nombre, $color in $redesSociales {
+    .link-#{$nombre} {
+
+        margin: 0 5px;
+        padding: 5px;
+        border-radius: 13px;
+        color: white;
+        text-decoration: none;
+        background-color: $color;
+        border-style: solid;
+        font-size: 16px;
+    }
+}

@@ -39,10 +39,12 @@ h3 {
     border-bottom: #ebc65e;
     font-size: $fontbasic;
     font-weight: $fontstyle;
+
 }
 
 h4{
     font-weight: $fontstyle;
+
 }
 
 
@@ -61,6 +63,7 @@ p strong{
     font-size: $fontbasic;
     font-weight: $fontstyle;
 
+
 }
 
   .parrafo {
@@ -72,3 +75,28 @@ p strong{
 
     padding-left: 5%;
  }
+
+ @mixin resaltador ($color, $fondo) {
+    color: $color;
+    background-color: $fondo;
+    padding: 0.5%;
+    max-width: 20%;
+    border-radius: 10%;
+    font-weight: $fontstyle;
+    cursor: pointer;
+    &:hover{
+        opacity: 0.9;
+        
+    }
+}
+    .opcion-1{
+        @include resaltador (rgb(244, 246, 244),rgb(31, 148, 45) );
+    }
+
+    .opcion-2{
+        @include resaltador(white,  rgb(41, 116, 50));
+    }
+
+    .opcion-3{
+        @include resaltador(rgb(194, 241, 194), (#207c1e) );
+    }

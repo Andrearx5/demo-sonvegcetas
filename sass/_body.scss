@@ -40,10 +40,11 @@ body {
     }
 
 }    
-    
+
+ /*Carrusel*/
 .carruselcontainer{
 
-    max-width: 100%;
+    max-width: 0%;
     margin: 0 auto
 }
 
@@ -92,12 +93,12 @@ body {
 
     &__v{
         @extend .card__link;
-        background-color: #eecf7a;
+        background-color: #edc967;
     }
 
     &__p{
         @extend .card__link;
-        background-color: #f1da9b;
+        background-color: #efd282;
     }
 
     
@@ -116,6 +117,7 @@ body {
     &__title {
         margin-bottom: 40px;
         text-align: center;
+        font-weight: $fontstyle;
     }
 
     &__grid {
@@ -128,62 +130,58 @@ body {
 
   }
 
-  @media (max-width:320px) {
-    .grid{
-        grid-template-columns: 1fr;
-    }
+
     
-    &__cards{
+
+   /*Media query version mobile*/
+
+  @media (max-width:320px) {
+
+    .carruselcontainer{
+        grid-template-columns: 1fr;
         justify-items: center;
 
-    }
-    &__img{
-
-        justify-items: center;;
     }
 
     .recetas__grid {
         grid-template-columns: 1fr;
+        justify-items: center;
+        max-width: 100%;
     }
 
 }
+
+ /*Media query version media*/
 
 @media (max-width:425px) {
-    .grid{
+
+    .carruselcontainer{
         grid-template-columns: 1fr;
-    }
-    
-    &__cards{
         justify-items: center;
 
-    }
-    &__img{
-
-        justify-items: center;;
     }
 
     .recetas__grid {
         grid-template-columns: 1fr;
+        justify-items: center;
+        max-width: 100%;
     }
-
 }
 
+ /*Media query version tablet*/
+
 @media (max-width:768px) {
-    .grid{
+
+    .carruselcontainer{
         grid-template-columns: 1fr;
-    }
-    
-    &__cards{
         justify-items: center;
 
-    }
-    &__img{
-
-        justify-items: center;;
     }
 
     .recetas__grid {
         grid-template-columns: 1fr;
+        justify-items: center;
+        max-width: 100%;
     }
 
 }
