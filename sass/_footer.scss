@@ -8,7 +8,6 @@ footer {
     padding: 1%;
     padding-left: 3%;
     font-style: oblique;
-    font-family: 'Times New Roman', Times, serif;
     background-image: linear-gradient(50deg, #ffba00, #ebc65e);
 
 
@@ -21,7 +20,8 @@ button{
 
  .icons{
     display: inline-block;
-    align-items: flex-end;
+    padding-block-end: 5%;
+
  }
 
  @each $nombre, $color in $redesSociales {
@@ -35,5 +35,9 @@ button{
         background-color: $color;
         border-style: solid;
         font-size: 16px;
+
+
     }
+
+    
 }

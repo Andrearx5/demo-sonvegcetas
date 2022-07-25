@@ -34,8 +34,16 @@ h1 {
     padding-top: 2%;
 }
 
+h2 {
+    color: $color;
+    font-size: $fontbasic;
+    font-weight: $fontstyle;
+
+
+}
+
 h3 {
-    color: #513c03;
+    color: $color;
     border-bottom: #ebc65e;
     font-size: $fontbasic;
     font-weight: $fontstyle;
@@ -79,11 +87,10 @@ p strong{
  @mixin resaltador ($color, $fondo) {
     color: $color;
     background-color: $fondo;
-    padding: 0.5%;
+    padding: 0.7%;
     max-width: 20%;
     border-radius: 10%;
     font-weight: $fontstyle;
-    cursor: pointer;
     &:hover{
         opacity: 0.9;
         
