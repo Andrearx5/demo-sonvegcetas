@@ -38,6 +38,7 @@ h2 {
     color: $color;
     font-size: $fontbasic;
     font-weight: $fontstyle;
+    text-align: center
 
 
 }
@@ -48,6 +49,7 @@ h3 {
     font-size: $fontbasic;
     font-weight: $fontstyle;
 
+
 }
 
 h4{
@@ -55,6 +57,9 @@ h4{
 
 }
 
+p{
+    text-align: justify;
+}
 
 p strong{
     font-size: 21px;
@@ -97,13 +102,10 @@ p strong{
     }
 }
     .opcion-1{
-        @include resaltador (rgb(244, 246, 244),rgb(31, 148, 45) );
+        @include resaltador ((white),  rgb(66, 156, 77)) ;
     }
 
     .opcion-2{
-        @include resaltador(white,  rgb(41, 116, 50));
+        @include resaltador(rgb(232, 224, 224), rgb(59, 151, 68));
     }
 
-    .opcion-3{
-        @include resaltador(rgb(194, 241, 194), (#207c1e) );
-    }

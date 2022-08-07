@@ -28,7 +28,8 @@ h1 {
 h2 {
   color: #513c03;
   font-size: 20px;
-  font-weight: bold; }
+  font-weight: bold;
+  text-align: center; }
 
 h3 {
   color: #513c03;
@@ -38,6 +39,9 @@ h3 {
 
 h4 {
   font-weight: bold; }
+
+p {
+  text-align: justify; }
 
 p strong {
   font-size: 21px; }
@@ -59,8 +63,8 @@ p strong {
   padding-left: 5%; }
 
 .opcion-1 {
-  color: #f4f6f4;
-  background-color: #1f942d;
+  color: white;
+  background-color: #429c4d;
   padding: 0.7%;
   max-width: 20%;
   border-radius: 10%;
@@ -69,23 +73,13 @@ p strong {
     opacity: 0.9; }
 
 .opcion-2 {
-  color: white;
-  background-color: #297432;
+  color: #e8e0e0;
+  background-color: #3b9744;
   padding: 0.7%;
   max-width: 20%;
   border-radius: 10%;
   font-weight: bold; }
   .opcion-2:hover {
-    opacity: 0.9; }
-
-.opcion-3 {
-  color: #c2f1c2;
-  background-color: #207c1e;
-  padding: 0.7%;
-  max-width: 20%;
-  border-radius: 10%;
-  font-weight: bold; }
-  .opcion-3:hover {
     opacity: 0.9; }
 
 header {
@@ -147,6 +141,7 @@ body {
   max-width: 0%;
   margin: 0 auto; }
 
+/*Tarjetas*/
 .card {
   background-color: #f3eddc;
   padding: 10px;
@@ -207,13 +202,25 @@ body {
 @media (max-width: 320px) {
   .carruselcontainer {
     grid-template-columns: 1fr;
-    justify-items: center; }
+    justify-items: center;
+    max-width: 80%; }
   .recetas__grid {
     grid-template-columns: 1fr;
     justify-items: center;
-    max-width: 100%; }
+    max-width: 90%; }
   .form {
-    padding: 10px; } }
+    padding: 10px;
+    font-size: 16px; }
+  h1 {
+    font-size: 20px; }
+  h2 {
+    font-size: 19px; }
+  h3 {
+    font-size: 17px; }
+  .parrafo {
+    font-size: 16px; }
+  .display-6 {
+    font-size: 19px; } }
 
 /*Media query version media*/
 @media (max-width: 425px) {
@@ -228,17 +235,41 @@ body {
 .form {
   padding: 10px; }
 
+h1 {
+  font-size: 20px; }
+
+h2 {
+  font-size: 19px; }
+
+h3 {
+  font-size: 17px; }
+
+.parrafo {
+  font-size: 17px; }
+
+.display-6 {
+  font-size: 19px; }
+
 /*Media query version tablet*/
 @media (max-width: 768px) {
   .carruselcontainer {
     grid-template-columns: 1fr;
-    justify-items: center; }
+    justify-items: center;
+    max-width: 80%; }
   .recetas__grid {
     grid-template-columns: 1fr;
     justify-items: center;
     max-width: 100%; }
   .form {
-    padding: 10px; } }
+    padding: 10px; }
+  h1 {
+    font-size: 22px; }
+  h2 {
+    font-size: 21px; }
+  h3 {
+    font-size: 19px; }
+  .parrafo {
+    font-size: 19px; } }
 
 /*Pie de pagina*/
 footer {
