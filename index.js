@@ -1,6 +1,7 @@
 alert ("Bienvenid@s a SonVegcetas");
 
-/*Le baje la cantidad de cupos para que no se haga  tan largo*/
+//Le baje la cantidad de cupos para que no se haga  tan largo
+
 
 let cupo = 1;
 let totalcupos = 2;
@@ -25,7 +26,7 @@ while (cupo <= totalcupos){
 
 
 }
-/*Cálculo de pago*/
+//Cálculo de pago//
 
 let precio, monto, resultado, opcionDePago, opcionValida=0;
 
@@ -79,3 +80,50 @@ while (opcionValida===0) {
 
 alert ("Los pagos se realizan el dia del curso en nuestras instalaciones. Muchas gracias por elegirnos, esperamos que lo disfrutes! nos vemos pronto.");
 
+
+//Funcion constructora- estudiantes inscritos en el curso//
+
+function Students(name, alimentacion, edad){
+    this.name = name;
+    this.alimentacion = alimentacion;
+    this.edad = edad;
+
+}
+
+const studentOne = new Students("daniela", "vegana", 37);
+const studentTwo = new Students("andrea", "veggie", 34);
+console.log(studentOne);
+console.log(studentTwo);
+
+alert("Sorpresa: Incorporamos libros a nuestra tienda!!")
+
+
+  let libros = [
+    { id: 1, nombre: "Cocina facil", precio: 1000 },
+    { id: 2, nombre: "Como comer mejor", precio: 1100 },
+    { id: 3, nombre: "Recetarios veganos", precio: 500 },
+    { id: 4, nombre: "La nueva salud", precio: 700 },
+  ];
+
+   libros.forEach(item => {
+   alert(item.nombre);
+});
+
+  let answer = prompt("Le gustaria agregar un libro a su curso?");
+
+  if (answer === "si") {
+
+    let nombre = prompt("Ingrese el nombre de su compra");
+    let libro = libros.find((el) => el.nombre === nombre);
+    let mensaje = ` Id: ${libro.id}
+    Nombre: ${libro.nombre}
+    Precio: ${libro.precio}`;
+    alert(mensaje);
+  }
+
+      else if(answer === "no"){
+
+    let mensaje = "Muchas Gracias, saludos.";
+    alert(mensaje);
+
+    };

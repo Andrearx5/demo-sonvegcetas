@@ -191,7 +191,7 @@ body {
 /*Formulario*/
 .form {
   display: block;
-  width: 100%;
+  width: 70%;
   padding: 30px 70px;
   font-style: bold; }
   .form__interior {
