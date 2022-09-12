@@ -62,24 +62,14 @@ p strong {
 .textof {
   padding-left: 5%; }
 
-.opcion-1 {
+.option1 {
   color: white;
   background-color: #429c4d;
   padding: 0.7%;
   max-width: 20%;
   border-radius: 10%;
   font-weight: bold; }
-  .opcion-1:hover {
-    opacity: 0.9; }
-
-.opcion-2 {
-  color: #e8e0e0;
-  background-color: #3b9744;
-  padding: 0.7%;
-  max-width: 20%;
-  border-radius: 10%;
-  font-weight: bold; }
-  .opcion-2:hover {
+  .option1:hover {
     opacity: 0.9; }
 
 header {

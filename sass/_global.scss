@@ -101,11 +101,7 @@ p strong{
         
     }
 }
-    .opcion-1{
+    .option1{
         @include resaltador ((white),  rgb(66, 156, 77)) ;
-    }
-
-    .opcion-2{
-        @include resaltador(rgb(232, 224, 224), rgb(59, 151, 68));
     }
 
