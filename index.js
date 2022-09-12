@@ -11,6 +11,8 @@ while (cupo <= totalcupos){
     let message = prompt ("Gracias por inscribirte en nuestro curso de cocina, eres Veggie, Vegan o solo quieres aprender?");
     let age = parseInt(prompt("Ingrese su edad"));
 
+    //Interaccion DOM//
+
     const namename = document.querySelector(".namealert").innerHTML = "Bienveni@ a nuestro espacio " + name; 
       
     if( age <= "17"){
