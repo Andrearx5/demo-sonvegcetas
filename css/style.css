@@ -68,9 +68,15 @@ p strong {
   padding: 0.7%;
   max-width: 20%;
   border-radius: 10%;
-  font-weight: bold; }
+  font-weight: bold; 
+}
   .option1:hover {
-    opacity: 0.9; }
+    opacity: 0.9; 
+  }
+
+  .option2{
+    background-color: red;
+  }
 
 header {
   background-image: url(../Imagenes/headerpic.jpeg);

@@ -11,20 +11,22 @@ while (cupo <= totalcupos){
     let message = prompt ("Gracias por inscribirte en nuestro curso de cocina, eres Veggie, Vegan o solo quieres aprender?");
     let age = parseInt(prompt("Ingrese su edad"));
 
+    const namename = document.querySelector(".namealert").innerHTML = "Bienveni@ a nuestro espacio " + name; 
       
-     if( age <= "17"){
+    if( age <= "17"){
           alert ("Para poder participar tienes que ser mayor de edad"); 
           
-        }
-        else {
+    }
+    else{
             let saludo = `Hola ${name} tu cupo es el nro ${cupo} el importe de los cursos es de 2000 pesos (Incluye recetario y merienda con té y budines) y 2400 pesos (Incluye degustaciones de todo el menu + recetarios.)`;
             cupo++;
             alert (saludo);
-        }
+    }
+    
 
-        }
+}
 
-
+        
 
 //Cálculo de pago//
 
