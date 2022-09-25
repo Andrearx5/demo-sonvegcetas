@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="./css/style.css">
 
 
+
 </head>
 <body>
     <header class="puntos">
@@ -54,8 +55,15 @@
     <main>
         <section>
             <!--Info del sitio-->
+            <div class="userinit">
+              <form name="form" id="forms">
+                Nombre: &nbsp;
+                <input type="text" id="name">
+                <input type="button" value=" Inicia sesion">
+              </form>
+            </div>
 
-            <h1 class ="namealert"></h1>
+            <h1 class ="namealert"></h1> 
             <h1 class="display-6">RECETAS VEGANAS Y VEGETARIANAS</h1>
             <article class="parrafo">
                 <h2>FACIL Y SALUDABLE</h2>
@@ -227,13 +235,15 @@
 
             <form id="info">
               <input type="text" />
-              <input type="submit" value="Enviar" />
+              <input type="submit" value="Agregar" />
             </form>
             <div id="boxs"></div>
-
+            <div id="totalElections"></div>
                  
              
-            </article>            
+            </article>     
+            
+            <section id="book-box"></section>
             
         </section>
 
@@ -265,7 +275,7 @@
         </div>
         
     </footer>
- 
+
 <script src="./index.js"></script>
 </body>
 

@@ -79,6 +79,22 @@ p strong{
 
 }
 
+  .userinit{
+    /*background-color: #5ea560;*/
+    background-image: url(../Imagenes/Capture.PNG);
+    background-size:cover;
+    align-items: flex-end;
+    color: rgb(72, 71, 71);
+    max-width: max-content;
+    border-radius: 8px;
+    padding: 4px;
+    text-align: start;
+    font-size: 16px;
+    font-weight:bold;
+
+
+}
+
   .parrafo {
     padding: 2%;
 
@@ -105,3 +121,26 @@ p strong{
         @include resaltador ((white),  rgb(66, 156, 77)) ;
     }
 
+
+    //estilos carrito//
+
+    .bookstyle{
+        max-width: 20%;
+        padding: 10px;
+        margin: 10px;
+        margin-bottom: 15px;
+        box-shadow: #ebc65e;
+    }
+
+    .prices{
+        font-weight: bold;
+    }
+
+    .button-add{
+        background-color: #cab16e;
+        color: #fff;
+        font-size: 18px;
+        font-weight: $fontstyle;
+        padding: 5%;
+        border: none;
+    }
