@@ -3,30 +3,30 @@
 //libros//
 
 let stockProductos = [
-    { id: 1, nombre: "Hola Vegan", cantidad: 1, precio: 5500, img: "../Imagenes/Hola-vegan.PNG"},
-    { id: 2, nombre: "Comida real", cantidad: 1, precio: 2880, img: "../Imagenes/comida-real.PNG"},
-    { id: 3, nombre: "Cocina vegetariana", cantidad: 1, precio: 2400, img: "../Imagenes/cocina-vegetariana.PNG"},
-    { id: 4, nombre: "Vegan Gourmet", cantidad: 1, precio: 2900, img: "../Imagenes/Vegan-gourmet.PNG"},
-    { id: 5, nombre: "La cocina de Daksha", cantidad: 1, precio: 5040, img: "../Imagenes/La-cocina-de-Daksha.PNG"},
+    { id: 1, nombre: "Hola Vegan", numbers: 1, precio: 5500, img: "../Imagenes/Hola-vegan.PNG"},
+    { id: 2, nombre: "Comida real", numbers: 1, precio: 2880, img: "../Imagenes/comida-real.PNG"},
+    { id: 3, nombre: "Cocina vegetariana", numbers: 1, precio: 2400, img: "../Imagenes/cocina-vegetariana.PNG"},
+    { id: 4, nombre: "Vegan Gourmet", numbers: 1, precio: 2900, img: "../Imagenes/Vegan-gourmet.PNG"},
+    { id: 5, nombre: "La cocina de Daksha", numbers: 1, precio: 5040, img: "../Imagenes/La-cocina-de-Daksha.PNG"},
   ];
   
-  const contenedorProductos = document.getElementById("contenedor-productos");
+  const booksContainer = document.getElementById("books-container");
   
-  const contenedorCarrito = document.getElementById("carrito-contenedor");
+  const buyContainer = document.getElementById("buy-container");
   
-  const botonVaciar = document.getElementById("vaciarCarrito");
+  const emptyButton = document.getElementById("emptybuy");
   
-  const contadorCarrito = document.getElementById("contador-carrito");
+  const countItem  = document.getElementById("counter");
 
-  const cantidad = document.getElementById("cantidad")
+  const numbers = document.getElementById("numbers")
 
-  const precioTotal = document.getElementById("precioTotal");
+  const totalPrice = document.getElementById("totalPrice");
   
 
   
   let carrito = [];
   
-  botonVaciar.addEventListener("click", () => {
+  emptyButton.addEventListener("click", () => {
     carrito.length = 0
     actualizarCarrito()
   });
@@ -42,32 +42,44 @@ let stockProductos = [
   stockProductos.forEach((producto) => {
     const div = document.createElement('div');
     div.className = ('producto');
-    div.innerHTML = ` 
-    <img src=${producto.img} alt ="">
-    <h3>${producto.nombre}</h3>
-    <p> Precio: $ ${producto.precio}</p>
-    <button id = "Agregar ${producto.id}" class ="boton-agregar"> Agregar <i class="fa fa-shopping-cart"></i></buttton>
-    `
+    div.innerHTML = ` <img src=${producto.img} alt ="">
+                      <h3>${producto.nombre}</h3>
+                      <p> Precio: $ ${producto.precio}</p>
+                      <button id = "Agregar ${producto.id}" class ="boton-agregar"> Agregar <i class="fa fa-shopping-cart"></i></buttton>
+                     `
   
-    contenedorProductos.appendChild(div);
+    booksContainer.appendChild(div);
   
     const boton = document.getElementById(`Agregar ${producto.id}`);
   
     boton.addEventListener("click", () => {
+
       agregarAlCarrito(producto.id)
-    })
+      Toastify({
+        text: "Agregado al carrito",
+        duration: 2500,
+        style: {
+          background: "linear-gradient(to right, #edc967 , #efd282)",
+          right: -150,
+          
+        },
+        }).showToast();
+
+      
+    });
   
     });
   
 
     const agregarAlCarrito = (prodId) => {
 
+
       const existe = carrito.some (prod => prod.id === prodId) 
   
       if (existe){
         const prod = carrito.map (prod => { 
             if (prod.id === prodId){
-                prod.cantidad++
+                prod.numbers++
             }
         })
     } else { 
@@ -84,10 +96,10 @@ let stockProductos = [
       const indice = carrito.indexOf(item);
       const existe = carrito.some (prod => prod.id === prodId) 
 
-    if (existe&&item.cantidad>1){
+    if (existe&&item.numbers>1){
         const prod = carrito.map (prod => { 
             if (prod.id === prodId){
-                prod.cantidad--
+                prod.numbers--
             }
         })
     }
@@ -100,17 +112,17 @@ let stockProductos = [
   
     const actualizarCarrito =() => { 
       
-      contenedorCarrito.innerHTML= ""  
+      buyContainer.innerHTML= ""  
   
         carrito.forEach((prod) => {
           const div = document.createElement("div")
           div.className = ("productoEnCarrito")
           div.innerHTML = `<p>${prod.nombre}</p>
                            <p>Precio: ${prod.precio}</p>
-                           <p>Cantidad: <span id="cantidad">${prod.cantidad}</span></p>
+                           <p>Cantidad: <span id="numbers">${prod.numbers}</span></p>
                            <button onclick= "eliminarDelCarrito(${prod.id})" class ="boton-eliminar"><i class= fas fa-trash-alt"></i></button>
                           `
-          contenedorCarrito.appendChild(div);
+          buyContainer.appendChild(div);
     
           localStorage.setItem("carrito", JSON.stringify(carrito))
           })
@@ -118,6 +130,6 @@ let stockProductos = [
   
         
     
-      contadorCarrito.innerText = carrito.length
-      precioTotal.innerText = carrito.reduce((acc, prod) => acc + prod.cantidad * prod.precio, 0)
+      countItem.innerText = carrito.length
+      totalPrice.innerText = carrito.reduce((acc, prod) => acc + prod.numbers * prod.precio, 0)
     }

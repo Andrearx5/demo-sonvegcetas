@@ -211,7 +211,7 @@ img {
 #boton-carrito:focus {
   outline: none; }
 
-#contenedor-productos {
+#books-container {
   max-width: 1200px;
   margin: 60px auto;
   display: flex;
@@ -298,7 +298,6 @@ img {
   width: 20px;
   height: 20px;
   color: #513c03;
-  border: none;
   font-size: 20px; }
 
 .boton-eliminar:hover {

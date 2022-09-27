@@ -1,15 +1,20 @@
 
-//DOM// SessionStorage // 
+//DOM// LocalStorage // 
 
 
     let form = document.getElementById("forms");
     form.onclick = function(e){
+        
         e.preventDefault();
         let name = document.getElementById("name").value;
-        name != "" ? document.querySelector(".namealert").innerHTML = "BIENVENID@ A NUESTRO ESPACIO " + name : document.querySelector(".namealert").innerHTML = "PARA UNA MEJOR EXPERIENCIA INGRESE SU NOMBRE";
-
         localStorage.setItem("name", name);
+        let nameOutput = localStorage.getItem("name")
+        name != "" ? document.querySelector(".namealert").innerHTML = "BIENVENID@ A NUESTRO ESPACIO " + nameOutput : document.querySelector(".namealert").innerHTML = "PARA UNA MEJOR EXPERIENCIA INGRESE SU NOMBRE";
+
+        
     };
+
+    document.querySelector(".nameOutput").innerHTML = localStorage.getItem("name")
 
 
     let options = ["Quesos", "Dips", "Panes", "Tartas", "Muffins", "Guisos", "Sin Tacc", "Drinks"];
