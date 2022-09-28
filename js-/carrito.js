@@ -25,19 +25,13 @@ let stockProductos = [
 
   
   let carrito = [];
-  
-  emptyButton.addEventListener("click", () => {
-    carrito.length = 0
-    actualizarCarrito()
-  });
-  
-  
-  document.addEventListener("DOMcontentLoaded", () => {
-    if (localStorage.getItem("carrito")){
-      carrito.JSON.parse(localStorage.getItem("carrito"))
-      actualizarCarrito()
+    
+  document.addEventListener('DOMContentLoaded', () => {
+    if (localStorage.getItem('carrito')){
+        carrito = JSON.parse(localStorage.getItem('carrito'))
+        actualizarCarrito()
     }
-  });
+})
   
   stockProductos.forEach((producto) => {
     const div = document.createElement('div');
@@ -114,6 +108,13 @@ let stockProductos = [
     actualizarCarrito()
   
     };
+
+    //Vaciar carrito//
+
+    emptyButton.addEventListener("click", () => {
+      carrito.length = 0
+      actualizarCarrito()
+    });
   
     const actualizarCarrito =() => { 
       
