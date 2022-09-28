@@ -1,6 +1,6 @@
 //Carrito//
 
-//libros//
+// Stock libros//
 
 let stockProductos = [
     { id: 1, nombre: "Hola Vegan", numbers: 1, precio: 5500, img: "./Imagenes/Hola-vegan.PNG"},
@@ -52,6 +52,8 @@ let stockProductos = [
   
     const boton = document.getElementById(`Agregar ${producto.id}`);
   
+    // Incorporando Toastify//
+
     boton.addEventListener("click", () => {
 
       agregarAlCarrito(producto.id)
@@ -70,6 +72,7 @@ let stockProductos = [
   
     });
   
+    //Agregando Items al carrito//
 
     const agregarAlCarrito = (prodId) => {
 
@@ -90,6 +93,8 @@ let stockProductos = [
     actualizarCarrito()
     };
   
+    //Eliminando Items del carrito//
+
     const eliminarDelCarrito = (prodId) => {
   
       const item = carrito.find((prod) => prod.id === prodId)
@@ -128,7 +133,7 @@ let stockProductos = [
           })
   
   
-        
+      // Sumatoria de Items y de Importe total//  
     
       countItem.innerText = carrito.length
       totalPrice.innerText = carrito.reduce((acc, prod) => acc + prod.numbers * prod.precio, 0)
