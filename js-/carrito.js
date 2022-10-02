@@ -29,7 +29,7 @@
 // Async - await- fetch// 
 
   const addStock = async () => {
-  const answer = await fetch("../stockProductos.json");
+  const answer = await fetch("./stockProductos.json");
   const stockProductos = await answer.json();
 
 
