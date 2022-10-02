@@ -1,0 +1,8 @@
+
+[
+    {"id": 1, "nombre": "Hola Vegan", "numbers": 1, "precio": 5500, "img": "./Imagenes/Hola-vegan.PNG"},
+    {"id": 2, "nombre": "Comida real", "numbers": 1, "precio": 2880, "img": "./Imagenes/comida-real.PNG"},
+    {"id": 3, "nombre": "Cocina vegetariana", "numbers": 1, "precio": 2400, "img": "./Imagenes/cocina-vegetariana.PNG"},
+    {"id": 4, "nombre": "Vegan Gourmet", "numbers": 1, "precio": 2900, "img": "./Imagenes/Vegan-gourmet.PNG"},
+    {"id": 5, "nombre": "La cocina de Daksha", "numbers": 1, "precio": 5040, "img": "./Imagenes/La-cocina-de-Daksha.PNG"}
+]
